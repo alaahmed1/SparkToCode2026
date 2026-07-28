@@ -6,10 +6,11 @@ namespace EFcoreProject.Models
 {
     public class Emloyee
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int age { get; set; }
-        public double Salary { get; set; }
+        public int EmployeeId { get; set; } //all tables should have a primary key, and by convention, EF Core will treat a property named "Id" or "<ClassName>Id" as the primary key.
+        public int SSN { get; set; } //Social Security Number, it differs from EmployeeId, which is a unique identifier for the employee in the database, while SSN is a government-issued identifier that may not be unique across different countries or regions.
+        public string EmloyeeName { get; set; }
+        public int EmployeeAge { get; set; }
+        public double EmployeeSalary { get; set; }
 
     }
 }
