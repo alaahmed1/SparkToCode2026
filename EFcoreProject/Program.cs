@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ProjectContext context = new ProjectContext(); //creating an instance of the ProjectContext class to access the database
+
+            //adding a new employee to the database
+
         }
     }
 }
