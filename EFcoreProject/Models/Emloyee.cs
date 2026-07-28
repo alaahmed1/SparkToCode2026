@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EFcoreProject.Models
 {
-    internal class Emloyee
+    public class Emloyee
     {
     }
 }

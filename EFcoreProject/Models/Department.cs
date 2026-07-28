@@ -4,7 +4,8 @@ using System.Text;
 
 namespace EFcoreProject.Models
 {
-    internal class Department
+    public class Department
     {
+
     }
 }
