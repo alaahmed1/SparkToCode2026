@@ -14,7 +14,7 @@ namespace EFcoreProject
         //2. Configure the database connection string and other options for the context.
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=EFcoreProjectDB;Trusted_Connection=True;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Server=A_Laptop\\SQLEXPRESS;Database=EFcoreProjectDB;Trusted_Connection=True;TrustServerCertificate=true;");
         }
     }
 }
