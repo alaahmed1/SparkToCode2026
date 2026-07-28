@@ -41,7 +41,8 @@ namespace EFcoreProject
 
             //case2: deleting an employee
             Console.WriteLine("ebter id of the employee to delete");
-            Employee employee= context.employees.FirstOrDefault(e => e.EmployeeId == Convert.ToInt32(Console.ReadLine()));
+            int id = Convert.ToInt32(Console.ReadLine());
+            Employee employee = context.employees.FirstOrDefault(e => e.EmployeeId == id); // finding the employee with the given id in the database using LINQ FirstOrDefault method. If no employee is found, it will return null.
             if (employee != null)
             {
                 context.employees.Remove(employee);
@@ -51,5 +52,6 @@ namespace EFcoreProject
             {
                 Console.WriteLine("Employee not found");
             }
+        }
     }
 }
