@@ -12,5 +12,6 @@ namespace EFcoreProject.Models
         public int EmployeeAge { get; set; }
         public double EmployeeSalary { get; set; }
 
+        public Department D { get; set; } //An employee belongs to one department, so we use a single Department object to hold the reference to the associated department.
     }
 }
