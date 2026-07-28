@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using EFcoreProject.Models; //importing the models namespace to use the Employee and Department classes in the ProjectContext class.
 
 namespace EFcoreProject
 {
