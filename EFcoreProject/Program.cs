@@ -38,6 +38,18 @@ namespace EFcoreProject
             context.employees.Add(e2);
             context.SaveChanges();
 
-        }
+
+            //case2: deleting an employee
+            Console.WriteLine("ebter id of the employee to delete");
+            Employee employee= context.employees.FirstOrDefault(e => e.EmployeeId == Convert.ToInt32(Console.ReadLine()));
+            if (employee != null)
+            {
+                context.employees.Remove(employee);
+                context.SaveChanges();
+            }
+            else
+            {
+                Console.WriteLine("Employee not found");
+            }
     }
 }
