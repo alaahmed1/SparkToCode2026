@@ -18,6 +18,26 @@ namespace EFcoreProject
             //we dont add the EmployeeId because it is an identity column and will be generated automatically by the database.
             context.employees.Add(e1);
             context.SaveChanges();
+
+
+
+            //Case 1: Registering a new user
+            Employee e2 = new Employee();
+            Console.WriteLine("Register User");
+            Console.WriteLine("enter the name of the employee");
+            string name = Console.ReadLine();
+            e2.EmloyeeName = name;
+
+            Console.WriteLine("enter the age of the employee");
+            int age = Convert.ToInt32(Console.ReadLine());
+            e2.EmployeeAge = age;
+            Console.WriteLine("enter the salary of the employee");
+            double salary = Convert.ToDouble(Console.ReadLine());
+            e2.EmployeeSalary = salary;
+
+            context.employees.Add(e2);
+            context.SaveChanges();
+
         }
     }
 }
