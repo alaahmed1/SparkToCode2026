@@ -4,7 +4,8 @@ using System.Text;
 
 namespace EFcoreProject
 {
-    internal class ProjectContext
+    public class ProjectContext
     {
+
     }
 }
