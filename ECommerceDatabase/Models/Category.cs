@@ -4,7 +4,10 @@ using System.Text;
 
 namespace ECommerceDatabase.Models
 {
-    internal class Category
+    public class Category
     {
+        public int CategoryId { get; set; } //auto-incremented primary key
+        public string CategoryName { get; set; }
+        public string CategoryDescription { get; set; }
     }
 }
