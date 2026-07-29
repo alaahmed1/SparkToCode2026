@@ -4,7 +4,8 @@ using System.Text;
 
 namespace ECommerceDatabase.Models
 {
-    internal class OrderProduct
+    public class OrderProduct
     {
+
     }
 }
