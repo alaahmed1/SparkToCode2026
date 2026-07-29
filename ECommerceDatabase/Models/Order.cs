@@ -4,7 +4,11 @@ using System.Text;
 
 namespace ECommerceDatabase.Models
 {
-    internal class Order
+    public class Order
     {
+        public int OrderId { get; set; } //auto-incremented primary key
+        public int UserId { get; set; } //foreign key
+        public DateTime OrderDate { get; set; }
+        public decimal OrderTotal { get; set; }
     }
 }
