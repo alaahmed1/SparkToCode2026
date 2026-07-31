@@ -12,6 +12,11 @@ namespace EFcoreProject.Models
         public int EmployeeAge { get; set; }
         public double EmployeeSalary { get; set; }
 
+        
+
+        [ForeignKey("D")] //specifies that the DepartmentId property is a foreign key that references the primary key of the Department table. The string "D" refers to the navigation property D, which represents the relationship between Employee and Department.
+        public int DepartmentId { get; set; }
         public Department D { get; set; } //An employee belongs to one department, so we use a single Department object to hold the reference to the associated department.
+
     }
 }
