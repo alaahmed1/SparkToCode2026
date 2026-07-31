@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Linq;
-
+using ECommerceDatabase.Models;
 
 namespace ECommerceDatabase
 {
     internal class Program
     {
-        // Shared DbContext - created ONCE, here, so every function below reuses
-        // the exact same instance instead of each function opening its own.
-        static AppDbContext context = new AppDbContext();
-        // Shared login state - 0 means "nobody is logged in".
-        // Set by Login(), read by any function that requires a logged-in user,
-        // reset back to 0 by Logout().
-        static int loggedInUserId = 0;
         static void Main(string[] args)
         {
+            AppDBContext context = new AppDBContext();
+        
             bool exitApp = false;
             while (!exitApp)
             {
