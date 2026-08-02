@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebAPIProject.Models
 {
@@ -9,5 +10,10 @@ namespace WebAPIProject.Models
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
         public double ProductPrice { get; set; }
+
+
+        [ForeignKey("_category")]
+        public int CategoryId { get; set; }
+        public Category _category { get; set; }  // Navigation property to related category
     }
 }
