@@ -18,4 +18,5 @@
   <Project Path="OOP_Practice_Tasks/OOP_Practice_Tasks.csproj" Id="ca7e681a-c7cf-4fe1-8092-48590ebf235d" />
   <Project Path="task1_solution/task1_solution.csproj" Id="2fca059f-2c65-47f3-8643-978d4dc584c7" />
   <Project Path="User_Functions/User_Functions.csproj" Id="fe244e8b-ab3d-46d8-9a31-537efc4b0d93" />
+  <Project Path="WebAPIProject/WebAPIProject.csproj" Id="7480f5b8-3317-4428-bbb9-f70a59a997fd" />
 </Solution>
